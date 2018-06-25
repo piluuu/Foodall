@@ -20,5 +20,9 @@ To initialise the DB manually, you have to implement an OnConfiguring method wit
 If you can see it you good to go with initialisation.
 1.	Set you UI to StartupProject (UI also needs references to Data and Domain projects) and Type add-migration init. Once is done you can see the init and snapshot files in you migration folder in Foodall.Data
 2.	Run script-migration to investigate deeper the look of your database you can create a script which is a database representation on production. 
-3.	Run update-database to apply migration which builds you database at given location (localdb), and it is done!
+3.	Run update-database to apply migration which builds you database at given location (localdb), and it is done! Check SQL Server Object Explorer to see the DB exists there
+
+Programmatically:
+Needs UI project which will be Foodall.WebAPI …In Progress
+
 
