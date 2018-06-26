@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Foodall.Data
 {
-    class DummyDataForContext
+    public static class DummyDataForContext
     {
+        //TODO Ensure seed data for context
     }
 }

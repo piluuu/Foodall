@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using Foodall.Data;
 using Foodall.Domain;
 
@@ -18,12 +18,12 @@ namespace Foodall.Services
 
         public Member GetMember(int memberId)
         {
-            throw new NotImplementedException();
+            return _context.Members.FirstOrDefault(m => m.Id == memberId);
         }
 
         public IEnumerable<Member> GetMembers()
         {
-            throw new NotImplementedException();
+            return _context.Members.OrderBy(m => m.Name);
         }
     }
 }
